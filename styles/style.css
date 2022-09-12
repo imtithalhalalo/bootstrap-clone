@@ -107,7 +107,9 @@ body {
 .nav-btn {
   display: block;
   background-color: #1abc9c;
-  border: 1px solid #fff;
+  border: 3px solid #fff;
+  color: #fff;
+  font-size: 18px;
   position: absolute;
   text-align: center;
   height: fit-content;
@@ -251,6 +253,14 @@ h2 {
   text-align: left;
   margin-left: 170px;
 }
+
+.error {
+  background-color: rgb(182, 42, 42);
+  color: #fff;
+  border-radius: 20px;
+  padding: 12px;
+  width: fit-content;
+}
 /* Footer Section */
 .footer-box {
   margin-right: 5%;
@@ -344,4 +354,25 @@ h2 {
     max-width: 100%;
     max-height: fit-content;
   }
+}
+
+/* Star and Dashes */
+.flex {
+  display: flex;
+  width: 100%;
+}
+.dash-white {
+  border-top: 3px solid #fff;
+  width: 50px;
+  margin: 0 auto;
+  
+}
+
+.dash-nave {
+  border-top: 3px solid #2c3e50;
+  width: 50px;
+  margin: 0 auto;
+}
+.bottom {
+  padding: 0 550px;
 }

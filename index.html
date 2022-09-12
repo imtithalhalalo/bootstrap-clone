@@ -28,6 +28,13 @@
       <section class="hero-content color-green container">
         <img src="/images/avataaars.png" alt="" width="200px" height="200px" />
         <h1 class="sample">Start Bootstrap</h1>
+        <div class="bottom">
+          <div class="flex align-center">
+            <div class="dash-white"></div>
+              <img src="/images/star.png" alt="" width="40px" heigth="40px">
+            <div class="dash-white"></div>
+          </div>
+        </div>
         <p>Graphic Artist - Web Designer - Illustrator</p>
       </section>
       <!-- Start Hero Content -->
@@ -106,13 +113,14 @@
     <div class="contact container">
       <h1 class="align-center p-1 mb-1">Contact Me</h1>
           <div class="contact-box">
-            <form action="" class="form">
-              <input id="fn" id="name" class="form-input" type="text" placeholder="Full Name"/>
-              <input id="last" id = "email" class="form-input" type="text" placeholder="Email Address"/>
-              <input id="phone_num" id="password" class="form-input" type="number" placeholder="Phone Number"/>
-              <textarea id="message" id="message" class="form-input" name="message" rows="4" cols="50" placeholder="Message"></textarea>
-              <div class="place-left">
-                <button class="btn-green">Send</button>
+            <div id="error"></div>
+            <form action="" id="form">
+              <input class="form-input" type="text" id="name" />
+              <input  class="form-input" type="text" id ="email"/>
+              <input id="phone_num" id="password" class="form-input" type="text"/>
+              <textarea id="message" id="message" class="form-input" name="message" rows="4" cols="50"></textarea>
+              <div class="align-center">
+                <button type="submit" value="Send" class="btn-green">Send</button>
               </div>
             </form>
           </div>
@@ -151,5 +159,6 @@
     </div>
   </body>
   <!-- Javascript -->
-  <script src="/index.js"></script>
+  <script src="/index.js">
+  </script>
 </html>
