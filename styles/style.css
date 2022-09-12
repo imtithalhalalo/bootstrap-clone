@@ -224,6 +224,7 @@ h2 {
   border: 0;
   box-shadow: 0 1px 0 0 #4f5861;
   transition: box-shadow 150ms ease-out;
+  margin-bottom: 4%;
 }
 
 .form-input:focus {
