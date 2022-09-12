@@ -24,6 +24,7 @@ form.addEventListener('submit', e => {
     if(phone_num.value === '' || phone_num.value == null) {
         messages.push("Phone Number Required")
     }
+    validatePhoneNumber(messages)
 
     if(message.value === '' || message.value == null) {
         messages.push("Message Required")
@@ -47,5 +48,14 @@ const validateEmail = (messages) => {
         }
 }
 
+const validatePhoneNumber = (messages) => {
+    // validation phone number
+    if(!phone_num.value.startsWith("+961")){
+        messages.push('Phone Number should start with +961')
+    }
+    if((/^(\+)961(\d|7[061])\d{7|6}$/.test(phone_num.value))){
+        messages.push('Invalid Phone Number')
+    }
+}
 
 
