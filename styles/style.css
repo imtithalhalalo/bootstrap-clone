@@ -230,6 +230,14 @@ h2 {
 .form-input:focus {
     box-shadow: 0 2px 0 0 #1abc9c;
 }
+.btn-green{
+    padding: 10px;
+    color: #fff;
+    background-color: #1abc9c;
+    opacity: 0.8;
+    border: none;
+    border-radius: 10px;
+}
 /* Footer Section */
 .footer-box {
   margin-right: 5%;
