@@ -82,6 +82,7 @@ body {
   margin-left: 20px;
   cursor: pointer;
   color: #fff;
+  overflow: hidden;
 }
 .links > li:last-child {
   margin-right: 0px;
@@ -89,6 +90,32 @@ body {
 .hidden {
   visibility: hidden;
 }
+
+/* Burger Nav */
+.btn-container {
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+  flex-direction: column;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav-btn {
+  display: block;
+  background-color:#1abc9c;
+  border: 1px solid #fff;
+  position: absolute;
+  text-align: center;
+  height: fit-content;
+  padding: 5px 0 ;
+  width: 60px;
+  border-radius: 15px;
+}
+
 .hero-content {
   padding: 15vh 0 37.5vh 0;
   width: 100%;
@@ -216,18 +243,60 @@ h2 {
 
 /* Media Query */
 @media (max-width: 1200px) {
-    .column {
-      flex: 40%;
-      max-width: 50%;
-      max-height: fit-content;
-    }
-  
-    .column-1 {
-      flex: 40%;
-      max-width: 50%;
-      max-height: fit-content;
-    }
+  .column {
+    flex: 40%;
+    max-width: 50%;
+    max-height: fit-content;
   }
+  .column-1 {
+    flex: 40%;
+    max-width: 50%;
+    max-height: fit-content;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-bar {
+    background-color: #2c3e50;
+    padding: 20px 10px;
+  }
+  .btn-container {
+    display: flex;
+  }
+  .links {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  #toggle ~ .links li {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    height: 0;
+  }
+  .links > li {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    color: #fff;
+    background-color: #2c3e50;
+  }
+  #toggle:checked ~ .links li {
+    height: 3.7em;
+    padding-left: 2em;
+    padding-bottom: 0.5em;
+    padding-top: 0.4em;
+  }
+  .nav-bar h1 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
 @media (max-width: 600px) {
   .column {
     flex: 100%;
