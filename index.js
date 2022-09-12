@@ -37,5 +37,15 @@ form.addEventListener('submit', e => {
     }
 })
 
+const validateEmail = (messages) => {
+        // validation email
+        arr =email_input.value.split('@');
+        if(arr[0].length < 3){
+            messages.push("Email before @ should be minimum of 3 characters")
+        }else if(arr[1].length < 5) {
+            messages.push("Email after @ should be minimum of 5 characters")
+        }
+}
+
 
 
