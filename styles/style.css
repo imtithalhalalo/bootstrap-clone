@@ -1,0 +1,85 @@
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.container {
+    padding: 0 12vh;
+    width: 100%;
+}
+/* colors */
+.nave_blue {
+  background-color: #2c3e50;
+}
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.nav-bar h1 {
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.links {
+  list-style: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+
+.links > li {
+  margin-right: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.links > li:last-child {
+  margin-right: 0px;
+}
+.hidden {
+  visibility: hidden;
+}
+.hero-content {
+  padding: 15vh 0 37.5vh 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #1ABC9C;
+}
+
+.sample {
+  text-transform: uppercase;
+  font: 2.5rem "MutatorSans", sans-serif;
+  font-weight: 700;
+  font-size: 62px;
+}
+
+.hero-content p {
+    font-size: 18px;
+}
