@@ -12,13 +12,13 @@ img {
 
 body {
   font-family: sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .container {
-  padding: 0 12vh;
+  padding: 11vh 12vh;
   width: 100%;
 }
 .align-center {
@@ -43,6 +43,9 @@ body {
 }
 .color-black {
   color: black;
+}
+.color-green {
+    background-color: #1abc9c;
 }
 /* Navbar */
 .nav-bar {
@@ -106,9 +109,10 @@ body {
 /* Portfolio */
 .portfolio h1{
     text-transform: uppercase;
+    color: #2c3e50;
     font: 2.5rem "MutatorSans", sans-serif;
     font-weight: 1000;
-    font-size: 34px;
+    font-size: 42px;
 }
 .portfolio-box img{
     border-radius: 15px;
@@ -117,3 +121,56 @@ body {
     margin-right: 5%;
     margin-bottom: 15%;
 }
+
+/* About */
+.about h1{
+    text-transform: uppercase;
+    font: 2.5rem "MutatorSans", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    color: #fff;
+}
+.p-1 {
+    padding-top: 1em;
+}
+
+.about-box {
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+.about-box p {
+    color: #fff;
+    font-size: 23px;
+    font-weight: normal;
+}
+.about {
+    justify-content: center;
+}
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+
+
+/* CSS */
+
+
+.btn:hover {
+  color: #000;
+  background-color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+  }
