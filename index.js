@@ -33,7 +33,7 @@ form.addEventListener('submit', e => {
     }
     if(messages.length > 0){
         e.preventDefault()
-        error.innerText = messages.join(', ')
+        error.innerText = messages.join(' - ')
         error.classList.add('error')
     }
 })
@@ -53,7 +53,7 @@ const validatePhoneNumber = (messages) => {
     if(!phone_num.value.startsWith("+961")){
         messages.push('Phone Number should start with +961')
     }
-    if((/^(\+)961(\d|7[061])\d{7|6}$/.test(phone_num.value))){
+    if((/^(\+)961(3|7[160])\d{7|8}$/.test(phone_num.value))){
         messages.push('Invalid Phone Number')
     }
 }
