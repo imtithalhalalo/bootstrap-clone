@@ -230,16 +230,16 @@ h2 {
 }
 
 .form-input:focus {
-    box-shadow: 0 2px 0 0 #1abc9c;
+  box-shadow: 0 2px 0 0 #1abc9c;
 }
-.btn-green{
-    padding: 30px;
-    color: #fff;
-    background-color: #1abc9c;
-    opacity: 0.6;
-    border: none;
-    border-radius: 10px;
-    font-size: 24px;
+.btn-green {
+  padding: 30px;
+  color: #fff;
+  background-color: #1abc9c;
+  opacity: 0.6;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
 }
 .contact {
   display: flex;
@@ -365,7 +365,6 @@ h2 {
   border-top: 3px solid #fff;
   width: 50px;
   margin: 0 auto;
-  
 }
 
 .dash-nave {
@@ -375,4 +374,15 @@ h2 {
 }
 .bottom {
   padding: 0 550px;
+}
+
+.color-nave {
+  color: #2c3e50;
+}
+
+/* All Messages */
+.messages {
+  font-size: 24px;
+  color: #2c3e50;
+  padding-bottom: 44px;
 }
