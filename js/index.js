@@ -6,7 +6,8 @@ const phone_num = document.getElementById('phone_num')
 const message = document.getElementById('message')
 const error = document.getElementById('error')
 
-
+//status
+let status = document.querySelector(".status")
 form.addEventListener('submit', e => {
     let messages = []
     if(fullname.value === '' || fullname.value == null) {
