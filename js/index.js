@@ -6,6 +6,17 @@ const phone_num = document.getElementById('phone_num')
 const message = document.getElementById('message')
 const error = document.getElementById('error')
 
+
+//display all messages button
+let all_message = document.getElementById('all_messages')
+
+
+//on click all messages button
+all_message.addEventListener('click', e => {
+    window.location.replace('allmessages.html')
+})
+
+
 //status
 let sstatus = document.querySelector(".status")
 form.addEventListener('submit', e => {
